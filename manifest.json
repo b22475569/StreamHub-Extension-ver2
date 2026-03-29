@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "StreamHub History Bridge",
+  "version": "1.0",
+  "description": "Bridges chrome.history API to Stream-Hub HTML page (online sync mode).",
+  "permissions": ["history"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["file:///*Stream-Hub*.html", "http://localhost/*", "https://localhost/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
