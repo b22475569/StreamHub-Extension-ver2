@@ -1,7 +1,8 @@
 ' ============================================================
-' Stream Hub Chrome Launcher  Ver 192.18  — Online Sync Edition
+' Stream Hub Chrome Launcher  Ver 193.18  — Online Sync Edition
 ' ============================================================
 ' Revision Notes (2026-03-29):
+'   [OK] Increase use "X" Can closed Stream and mouse cursor
 '   [OK] Unlocker Hovor let music preview play audio and increase volume icon and feature
 '   [OK] Removed Port 8178 chrome_history_server.py (deprecated)
 '        Ver 192.18 HTML syncs via Chrome Extension — no local Python
@@ -20,7 +21,7 @@ Set FSO      = CreateObject("Scripting.FileSystemObject")
 ' ── Path Configuration (edit this block if needed) ─────────
 Dim siteDir, htmlFile, url, chromePath
 siteDir    = "C:\Users\Administrator\OneDrive\Desktop\StreamHub-Extension"
-htmlFile   = "Stream-Hub_Ver-192_18_with_98-XP_sound-Smooth-Carousel_Securd.html"
+htmlFile   = "Stream-Hub_Ver-193_18_with_98-XP_sound-Smooth-Carousel_Securd.html"
 url        = "http://localhost:8078/" & htmlFile
 chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 ' ────────────────────────────────────────────────────────────
