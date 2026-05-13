@@ -1,11 +1,19 @@
 ' ============================================================
-' Stream Hub Chrome Launcher  Ver 193.18  — Online Sync Edition
+' Stream Hub Chrome Launcher  Ver 210.18  — Online Sync Edition
 ' ============================================================
-' Revision Notes (2026-03-29):
+' Revision Notes (2026-04-26):
+'  Increase Version to 210.18
+'  [OK] Increase Countdown sync up, if didn't sync will use 600sec countdown
+'  Increase Version to 209.18
+'  Feature 1 > noembed.com API
+'  Feature 2 > YouTube postMessage fallback
+'  Feature 3 > Fail safe : If nothing responds within 8 seconds, defaults to 10 minutes (600s) to prevent the card from being stuck.
+
+'   [OK] Increase BIGBANG K-POP url
 '   [OK] Increase use "X" Can closed Stream and mouse cursor
 '   [OK] Unlocker Hovor let music preview play audio and increase volume icon and feature
 '   [OK] Removed Port 8178 chrome_history_server.py (deprecated)
-'        Ver 192.18 HTML syncs via Chrome Extension — no local Python
+'        Ver 195.18 HTML syncs via Chrome Extension — no local Python
 '        history server required.
 '   [OK] Kept Port 8078 HTTP server (required: allows Extension to
 '        correctly bridge page events via http:// protocol)
@@ -21,7 +29,7 @@ Set FSO      = CreateObject("Scripting.FileSystemObject")
 ' ── Path Configuration (edit this block if needed) ─────────
 Dim siteDir, htmlFile, url, chromePath
 siteDir    = "C:\Users\Administrator\OneDrive\Desktop\StreamHub-Extension"
-htmlFile   = "Stream-Hub_Ver-193_18_with_98-XP_sound-Smooth-Carousel_Securd.html"
+htmlFile   = "Stream-Hub_Ver-210_18_with_98-XP_sound-Smooth-Carousel_Securd.html"
 url        = "http://localhost:8078/" & htmlFile
 chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 ' ────────────────────────────────────────────────────────────
